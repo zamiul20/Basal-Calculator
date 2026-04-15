@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="Calculator" mvid="c26703d6c9af48f48f52566aa42f1f99">
+  <java-to-managed>
+    <entry java-name="crc64529369d45f3c1450/MainActivity" managed-name="Calculator.MainActivity, Calculator" managed-type-token-id="33554444" />
+    <entry java-name="crc64529369d45f3c1450/MainApplication" managed-name="Calculator.MainApplication, Calculator" managed-type-token-id="33554445" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64529369d45f3c1450/MainActivity" managed-name="Calculator.MainActivity, Calculator" managed-type-token-id="33554444" />
+    <entry java-name="crc64529369d45f3c1450/MainApplication" managed-name="Calculator.MainApplication, Calculator" managed-type-token-id="33554445" />
+  </managed-to-java>
+</api>

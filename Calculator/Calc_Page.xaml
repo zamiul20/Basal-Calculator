@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.Calc_Page"
+             Title="Basal : Calculate">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+                Text="Basal Calculator v1.0"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            
+                <Button x:Name="firbas_but"  Text="First Base" Clicked="firbas_selec"  Grid.Column="0" Grid.Row="0" Margin="5" />
+                <Button x:Name="secbas_but" Text="Second Base" Clicked="secbas_selec" Grid.Column="0" Grid.Row="1" Margin="5" />
+                <Button x:Name="ansbas_but" Text="Answer Base" Clicked="ansbas_selec" Grid.Column="0" Grid.Row="2" Margin="5" />
+
+                <Button x:Name="firnum_but" Text="First Number" Clicked="firnum_selec" Grid.Column="1" Grid.Row="0" Margin="5" />
+                <Button x:Name="secnum_but" Text="Second Number" Clicked="secnum_selec" Grid.Column="1" Grid.Row="1" Margin="5" />
+                <Button x:Name="ansnum_but" Text="Answer Number" Clicked="ansnum_selec" Grid.Column="1" Grid.Row="2" Margin="5" />
+            </Grid>
+
+            <Grid Margin="5" HorizontalOptions="Fill">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label x:Name="indicat" Text="  Select a Base or Number   " VerticalTextAlignment="Center" HorizontalOptions="Center" Grid.Column="0" />
+                <Entry x:Name="leinput" Placeholder="Select Base or Number" Margin="2" MinimumWidthRequest="100" Grid.Column="1" />
+                <Label x:Name="num_disp" Text="" Margin="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"                       
+                       HeightRequest="50" Grid.Row="1" Grid.Column="1" />
+                <Button x:Name="setter" Clicked="sette" Text="Set" Margin="2" HorizontalOptions="Center" Grid.Column="2" />
+            </Grid>
+        
+            <Grid Margin="5" HorizontalOptions="Fill">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="add" Text="+" Margin="2" Clicked="add_but" Grid.Column="0" />
+                <Button x:Name="sub" Text="-" Margin="2" Clicked="sub_but" Grid.Column="1" />
+                <Button x:Name="mul" Text="×" Margin="2" Clicked="mul_but" Grid.Column="2" />
+                <Button x:Name="div" Text="÷" Margin="2" Clicked="div_but" Grid.Column="3" />
+                <Button x:Name="pow" Text="A ^ B" Margin="2" Clicked="pow_but" Grid.Column="4" />
+                <Button x:Name="mulpowE" Text="A × (e ^ B)" Margin="2" Clicked="mulpow_byE_but" Grid.Column="5" />            
+            </Grid>
+        
+
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Grid.Row="0" Margin="5" x:Name="negtivity" Text="ঋ" FontSize="Medium" Clicked="add_ente_n"/>
+                <Button Grid.Column="1" Grid.Row="0" Margin="5" x:Name="doubnegativity" Text="দ" FontSize="Medium" Clicked="add_ente_dn"/>
+
+                <Button Grid.Column="0" Grid.Row="1" Margin="5" x:Name="pos_rippl" Text="+ল" FontSize="Medium" Clicked="add_ente_pr"/>
+                <Button Grid.Column="1" Grid.Row="1" Margin="5" x:Name="neg_rippl" Text="-ল" FontSize="Medium" Clicked="add_ente_nr"/>
+
+                <Button Grid.Column="0" Grid.Row="2" Margin="5" x:Name="discret" Text="গ" FontSize="Medium" Clicked="add_ente_dis"/>
+                <Button Grid.Column="1" Grid.Row="2" Margin="5" x:Name="velocit" Text="স" FontSize="Medium" Clicked="add_ente_vel"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

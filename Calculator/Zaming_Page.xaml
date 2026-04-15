@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.Zaming_Page"
+             Title="Basal : Zaming">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+                Text="Zaming"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Grid Margin="5" HorizontalOptions="Fill">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label x:Name="indicat" Text="  Select a Base   " VerticalTextAlignment="Center" 
+               HorizontalOptions="Center" Grid.Column="0" />
+                <Entry x:Name="leinput" Placeholder="Select Base or Number" Margin="2" MinimumWidthRequest="100" Grid.Column="1" />
+                <Label x:Name="num_disp" Text="" Margin="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"                       
+       HeightRequest="50" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="1" />
+                <Button x:Name="set_but" Clicked="sette" Text="Set" Margin="2" HorizontalOptions="Center" Grid.Column="2" />
+
+                <Button x:Name="innum_but" Text="Input Value" Margin="5" Grid.Column="0" Grid.Row="2" Clicked="innum_sel" />
+                <Button x:Name="inbas_but" Text="Converting Base" Margin="5" Grid.Column="1" Grid.Row="2" Clicked="inbas_sel"/>
+                <Button x:Name="ansbas_but" Text="Casting Base" Margin="5" Grid.Column="2" Grid.Row="2" Clicked="ansbas_sel" />
+
+                <Button x:Name="conver_but" Text="Convert" Margin="5" Grid.ColumnSpan="3" Grid.Row="3" Clicked="conver" />
+            </Grid>
+
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Grid.Row="0" Margin="5" x:Name="negtivity" Text="ঋ" FontSize="Medium" Clicked="add_ente_n"/>
+                <Button Grid.Column="1" Grid.Row="0" Margin="5" x:Name="doubnegativity" Text="দ" FontSize="Medium" Clicked="add_ente_dn"/>
+
+                <Button Grid.Column="0" Grid.Row="1" Margin="5" x:Name="pos_rippl" Text="+ল" FontSize="Medium" Clicked="add_ente_pr"/>
+                <Button Grid.Column="1" Grid.Row="1" Margin="5" x:Name="neg_rippl" Text="-ল" FontSize="Medium" Clicked="add_ente_nr"/>
+
+                <Button Grid.Column="0" Grid.Row="2" Margin="5" x:Name="discret" Text="গ" FontSize="Medium" Clicked="add_ente_dis"/>
+                <Button Grid.Column="1" Grid.Row="2" Margin="5" x:Name="velocit" Text="স" FontSize="Medium" Clicked="add_ente_vel"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

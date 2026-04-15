@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456 456" width="456" height="456">
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 335px;fill: #ffffff;font-weight: 400;font-family: "ArialMT", "Arial" } 
+	</style>
+	<text id="Z" transform="translate(20,337.9)">
+		<tspan x="0" y="0" class="t0">Z
+</tspan>
+	</text>
+	<text id="C" transform="translate(95,337.9)">
+		<tspan x="0" y="0" class="t0">C
+</tspan>
+	</text>
+	<text id="S" transform="translate(225,337.9)">
+		<tspan x="0" y="0" class="t0">S
+</tspan>
+	</text>
+</svg>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Calculator</id>
+    <version>1.0.0</version>
+    <authors>Calculator</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net10.0-android36.0">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.20" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.20" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-ios26.2">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.20" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.20" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-maccatalyst26.2">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.20" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.20" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-windows10.0.19041">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="10.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.20" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Essentials" version="10.0.20" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-android\Calculator.runtimeconfig.json" target="lib\net10.0-android36.0\Calculator.runtimeconfig.json" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-android\Calculator.dll" target="lib\net10.0-android36.0\Calculator.dll" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-android\Calculator.xml" target="lib\net10.0-android36.0\Calculator.xml" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-ios\iossimulator-x64\Calculator.runtimeconfig.json" target="lib\net10.0-ios26.2\Calculator.runtimeconfig.json" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-ios\iossimulator-x64\Calculator.dll" target="lib\net10.0-ios26.2\Calculator.dll" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Calculator.runtimeconfig.json" target="lib\net10.0-maccatalyst26.2\Calculator.runtimeconfig.json" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Calculator.dll" target="lib\net10.0-maccatalyst26.2\Calculator.dll" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Calculator.runtimeconfig.json" target="lib\net10.0-windows10.0.19041\Calculator.runtimeconfig.json" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-windows10.0.19041.0\win-x64\Calculator.dll" target="lib\net10.0-windows10.0.19041\Calculator.dll" />
+    <file src="C:\Users\Zamiul\Desktop\html_web\C#\basal_mathematics\calculatoors\Calculator\bin\Debug\net10.0-windows10.0.19041.0\win-x64\resources.pri" target="lib\net10.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>
