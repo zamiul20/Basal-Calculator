@@ -124,15 +124,15 @@ public partial class Zaming_Page : ContentPage
 
                 if (x.Contains("+ল"))
                 {
-                    leoutbas.ripple = 0;
-                    leoutbas.echo = int.Parse(x[x.IndexOf("+ল") + 1]);
+                    leoutbas.echo = 0;
+                    leoutbas.ripple = int.Parse(x[x.IndexOf("+ল") + 1]);
                 }
                 else if (x.Contains("-ল"))
                 {
-                    leoutbas.ripple = 1;
-                    leoutbas.echo = int.Parse(x[x.IndexOf("-ল") + 1]);
+                    leoutbas.echo = 1;
+                    leoutbas.ripple = int.Parse(x[x.IndexOf("-ল") + 1]);
                 }
-                else leoutbas.ripple = 2;
+                else leoutbas.echo = 2;
 
                 if (x.Contains("স"))
                 {
@@ -157,15 +157,15 @@ public partial class Zaming_Page : ContentPage
 
                 if (x.Contains("+ল"))
                 {
-                    leinbas.ripple = 0;
-                    leinbas.echo = int.Parse(x[x.IndexOf("+ল") + 1]);
+                    leinbas.echo = 0;
+                    leinbas.ripple = int.Parse(x[x.IndexOf("+ল") + 1]);
                 }
                 else if (x.Contains("-ল"))
                 {
-                    leinbas.ripple = 1;
-                    leinbas.echo = int.Parse(x[x.IndexOf("-ল") + 1]);
+                    leinbas.echo = 1;
+                    leinbas.ripple = int.Parse(x[x.IndexOf("-ল") + 1]);
                 }
-                else leinbas.ripple = 2;
+                else leinbas.echo = 2;
 
                 if (x.Contains("স"))
                 {
@@ -189,7 +189,7 @@ public partial class Zaming_Page : ContentPage
                 leinbas.depolaris(outout, leinbas.base_value, leinbas.velocity, leinbas.polar, 69);
 
             if (leinbas.ripple != 2)
-                leinbas.echor(outout, leinbas.ripple, leinbas.echo, 0);
+                leinbas.echor(outout, leinbas.ripple, leinbas.echo, 2);
 
             if (leoutbas.ripple != 2)
             {
