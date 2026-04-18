@@ -192,7 +192,7 @@ namespace Calculator
                 }
             }
 
-            return notobasten(tobasten(num, bass, velocity), bass, velocity, accuracy);
+            return notobasten(tobasten(num, bass, velocity) + abls, bass, velocity, accuracy);
         }
         #endregion
 
