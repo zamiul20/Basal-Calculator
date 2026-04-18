@@ -159,15 +159,15 @@ public partial class Calc_Page : ContentPage
 
             if (x.Contains("+ল"))
             {
-                basar[2].ripple = 0;
-                basar[2].echo = int.Parse(x[x.IndexOf("+ল") + 1]);
+                basar[2].echo = 0;
+                basar[2].ripple = int.Parse(x[x.IndexOf("+ল") + 1]);
             }
             else if (x.Contains("-ল"))
             {
-                basar[2].ripple = 1;
-                basar[2].echo = int.Parse(x[x.IndexOf("-ল") + 1]);
+                basar[2].echo = 1;
+                basar[2].ripple = int.Parse(x[x.IndexOf("-ল") + 1]);
             }
-            else basar[2].ripple = 2;
+            else basar[2].echo = 2;
 
             if (x.Contains("স"))
             {
@@ -192,15 +192,15 @@ public partial class Calc_Page : ContentPage
 
             if (x.Contains("+ল"))
             {
-                basar[0].ripple = 0;
-                basar[0].echo = int.Parse(x[x.IndexOf("+ল") + 1]);
+                basar[0].echo = 0;
+                basar[0].ripple = int.Parse(x[x.IndexOf("+ল") + 1]);
             }
             else if (x.Contains("-ল"))
             {
-                basar[0].ripple = 1;
-                basar[0].echo = int.Parse(x[x.IndexOf("-ল") + 1]);
+                basar[0].echo = 1;
+                basar[0].ripple = int.Parse(x[x.IndexOf("-ল") + 1]);
             }
-            else basar[0].ripple = 2;
+            else basar[0].echo = 2;
 
             if (x.Contains("স"))
             {
@@ -225,15 +225,15 @@ public partial class Calc_Page : ContentPage
 
             if (x.Contains("+ল"))
             {
-                basar[1].ripple = 0;
-                basar[1].echo = int.Parse(x[x.IndexOf("+ল") + 1]);
+                basar[1].echo = 0;
+                basar[1].ripple = int.Parse(x[x.IndexOf("+ল") + 1]);
             }
             else if (x.Contains("-ল"))
             {
-                basar[1].ripple = 1;
-                basar[1].echo = int.Parse(x[x.IndexOf("-ল") + 1]);
+                basar[1].echo = 1;
+                basar[1].ripple = int.Parse(x[x.IndexOf("-ল") + 1]);
             }
-            else basar[1].ripple = 2;
+            else basar[1].echo = 2;
 
             if (x.Contains("স"))
             {
